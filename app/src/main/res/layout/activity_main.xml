@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+
+    tools:context="com.example.komal.Client_Server.MainActivity">
+
+    <TextView
+        android:text="Select Your Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:textSize="35dp"
+        android:textColor="#ad1a2c"
+        android:id="@+id/tv1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="74dp"
+        android:id="@+id/et1"
+        android:hint="Enter the server ip"
+        android:layout_below="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColorHint="#929f36"
+        android:textColor="#e15c39"
+        android:inputType="phone" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="Enter Port Number"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColorHint="#929f36"
+        android:textColor="#e15c39"
+        android:layout_below="@+id/et1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:id="@+id/et2" />
+
+    <Button
+        android:text="Start Server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:id="@+id/b1"
+        android:background="#f0f8ff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/tv1"
+        android:layout_alignStart="@+id/tv1" />
+
+    <Button
+        android:text="Start client"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f0f8ff"
+        android:id="@+id/b2"
+        android:layout_alignBottom="@+id/b1"
+        android:layout_alignRight="@+id/tv1"
+        android:layout_alignEnd="@+id/tv1"
+        android:layout_alignTop="@+id/b1" />
+
+    <Button
+        android:text="Exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#d3ffce"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Welcome Komal :)"
+        android:textColor="@color/colorPrimaryDark"/>
+
+
+</RelativeLayout>

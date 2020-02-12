@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    android:background="@drawable/clientt">
+
+<EditText
+    android:id="@+id/addressEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Server ip address"
+    android:textColorHint="#ad8110"
+    android:inputType="phone"
+    android:textColor="#00c5cd"
+    android:backgroundTint="@color/colorAccent"/>
+
+<EditText
+    android:id="@+id/portEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Server port number"
+    android:inputType="phone"
+    android:textColor="#00c5cd"
+    android:textColorHint="#ad8110"
+    android:backgroundTint="@color/colorAccent"/>
+
+<Button
+    android:id="@+id/connectButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:text="Connect..." />
+
+<Button
+    android:id="@+id/clearButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Clear" />
+
+<TextView
+    android:id="@+id/responseTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="#FFFF00"/>
+
+    <TextView
+        android:id="@+id/extra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
+        android:text="Feedback: sweetkomal032@gmail.com"
+        android:gravity="bottom"
+        android:textAllCaps="false"
+        android:paddingBottom="5px"
+        android:textAlignment="center"
+        android:textColor="#ff0000"/>
+
+</LinearLayout>
